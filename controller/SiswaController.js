@@ -30,6 +30,7 @@ export const saveSiswa = (req, res) => {
   const nama = req.body.nama;
   const email = req.body.email;
   const kelas = req.body.kelas;
+  const semester = req.body.semester;
   const nis = req.body.nis;
   const ttl = req.body.ttl;
   const alamat = req.body.alamat;
@@ -58,6 +59,7 @@ export const saveSiswa = (req, res) => {
         nama: nama,
         email: email,
         kelas: kelas,
+        semester: semester,
         nis: nis,
         ttl: ttl,
         alamat: alamat,
@@ -110,6 +112,7 @@ export const updateSiswa = async (req, res) => {
   const nama = req.body.nama;
   const email = req.body.email;
   const kelas = req.body.kelas;
+  const semester = req.body.semester;
   const nis = req.body.nis;
   const ttl = req.body.ttl;
   const alamat = req.body.alamat;
@@ -127,6 +130,7 @@ export const updateSiswa = async (req, res) => {
         nama: nama,
         email: email,
         kelas: kelas,
+        semester: semester,
         nis: nis,
         ttl: ttl,
         alamat: alamat,

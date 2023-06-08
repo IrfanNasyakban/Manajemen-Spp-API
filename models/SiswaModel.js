@@ -7,6 +7,7 @@ const Siswa = db.define('siswa', {
     nama: DataTypes.STRING,
     email: DataTypes.STRING,
     kelas: DataTypes.STRING,
+    semester: DataTypes.STRING,
     nis: DataTypes.STRING,
     ttl: DataTypes.STRING,
     alamat: DataTypes.STRING,
