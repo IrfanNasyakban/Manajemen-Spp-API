@@ -1,0 +1,30 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjg2NzQ4MTI4LCJleHAiOjE2ODY3NDgxNDh9.SORLK0tQRyDlqnSDRzaanLXjigs646P9XQQ7wO27sKk
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Irvan Nasyakban",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
