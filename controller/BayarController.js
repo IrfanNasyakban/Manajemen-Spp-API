@@ -31,6 +31,7 @@ export const saveBayar = (req, res) => {
   const kelas = req.body.kelas;
   const semester = req.body.semester;
   const jumlah = req.body.jumlah;
+  const status = "ON PROGRESSING"
   const file = req.files.file;
   const fileSize = file.data.length;
   const ext = path.extname(file.name);
@@ -51,6 +52,7 @@ export const saveBayar = (req, res) => {
         kelas: kelas,
         semester: semester,
         jumlah: jumlah,
+        status: status,
         image: fileName,
         url: url,
       });
@@ -95,6 +97,7 @@ export const updateBayar = async (req, res) => {
   const kelas = req.body.kelas;
   const semester = req.body.semester;
   const jumlah = req.body.jumlah;
+  const status = req.body.status;
   const url = `${req.protocol}://${req.get("host")}/images/${fileName}`;
 
   try {
@@ -104,6 +107,7 @@ export const updateBayar = async (req, res) => {
         kelas: kelas,
         semester: semester,
         jumlah: jumlah,
+        status: status,
         image: fileName,
         url: url,
       },

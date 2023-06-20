@@ -1,5 +1,5 @@
 GET http://localhost:5000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIiwiaWF0IjoxNjg2NzQ4MTI4LCJleHAiOjE2ODY3NDgxNDh9.SORLK0tQRyDlqnSDRzaanLXjigs646P9XQQ7wO27sKk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJJcnZhbiBOYXN5YWtiYW4iLCJlbWFpbCI6ImFkbWluMTIzQGdtYWlsLmNvbSIsImlhdCI6MTY4NzA3MTkzMSwiZXhwIjoxNjg3MDcxOTYxfQ.Joizkc5cX-2seYvcKS5zjy9EpLLDkR7I9upodvmv4Ks
 
 
 ###
@@ -8,9 +8,9 @@ Content-Type: application/json
 
 {
     "name": "Irvan Nasyakban",
-    "email": "admin@gmail.com",
-    "password": "123456",
-    "confPassword": "123456"
+    "email": "admin123@gmail.com",
+    "password": "1234567",
+    "confPassword": "1234567"
 }
 
 
@@ -19,8 +19,8 @@ POST http://localhost:5000/login
 Content-Type: application/json
 
 {
-    "email": "admin@gmail.com",
-    "password": "123456"
+    "email": "admin123@gmail.com",
+    "password": "1234567"
 }
 
 ###

@@ -8,6 +8,7 @@ const Bayar = db.define('bayar', {
     kelas: DataTypes.STRING,
     semester: DataTypes.STRING,
     jumlah: DataTypes.STRING,
+    status: DataTypes.STRING,
     image: DataTypes.STRING,
     url: DataTypes.STRING
 }, {
