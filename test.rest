@@ -7,10 +7,10 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "Irvan Nasyakban",
-    "email": "admin123@gmail.com",
-    "password": "1234567",
-    "confPassword": "1234567"
+    "name": "Admin",
+    "email": "admin",
+    "password": "admin",
+    "confPassword": "admin"
 }
 
 
